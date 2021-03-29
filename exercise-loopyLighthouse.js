@@ -8,10 +8,13 @@ By print, we are referring to console.log. */
 
 
 /* 
-- first, write the loop and make sure it works <- i am here
--  then pick a condition i want to start with, ex. printing "Loopy" instead of multiples of 3 and test
+- first, write the loop and make sure it works 
+-  then pick a condition i want to start with, ex. printing "Loopy" instead of multiples of 3 and test <- i am here
 - then add in the next exceptions until they all work*/
 
 for (let num = 100; num <= 200; num++) {
+  if (num % 3 === 0 && num % 4 === 0) {
+    console.log("LoopyLighthouse");
+  } else
   console.log(num);
 }
