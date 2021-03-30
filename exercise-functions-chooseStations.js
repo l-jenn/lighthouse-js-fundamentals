@@ -13,14 +13,17 @@ const stations = [
 ];
 
 function chooseStations(stations) {
+  let goodStations = [];
+
   for (let station of stations) {
     const capacity = station[1];
     const venueType = station[2];
 
     if (capacity >= 20 && (venueType === 'school' || venueType === 'community centre')) {
-      console.log(station[0])
+      goodStations.push(station[0]);
     }
   }
+  return goodStations;
 }
 
-chooseStations(stations);
+console.log(chooseStations(stations));
