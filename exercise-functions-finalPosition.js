@@ -10,9 +10,7 @@ The finalPosition function should return the array:
 const moves = ['north', 'north', 'west', 'west', 'north', 'east','north'];
 
 function finalPosition(moves) {
-  let coordinates = [];
-  let x = 0;
-  let y = 0;
+  let [x, y] = [0, 0];
 
   for (let move of moves) {
     if (move === 'north') {
@@ -26,10 +24,7 @@ function finalPosition(moves) {
     }
   }
 
-  coordinates.push(x);
-  coordinates.push(y);
-
-  return coordinates;
+  return [x, y];
 }
 
 console.log(finalPosition(moves));
